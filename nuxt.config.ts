@@ -5,9 +5,12 @@ export default defineNuxtConfig({
   },
 
   imports: {
-    dirs: ['app/enums']
+    dirs: ['-/enums']
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxt/ui']
+  modules: ['@nuxt/ui'],
+  plugins: [
+    '~/plugins/dayjs'
+  ]
 })
