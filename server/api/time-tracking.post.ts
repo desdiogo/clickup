@@ -51,6 +51,15 @@ export default defineEventHandler(async (event) => {
     for (const time of timeTracking) {
       const key = dayjs(Number(time.end)).format('DD/MM/YYYY')
 
+      const index = dates.findIndex((date) => date.day === key)
+
+      if(index !== - 1) {
+        const date = dates[index]
+        dates[index].duration = Number(date.duration) + Number(time.duration)
+        dates[index].hours = Number(Number(dates[index].duration) / 60 / 60 / 1000).toFixed(2)
+        continue
+      }
+
       dates.push({
         day: key,
         hours: Number(Number(time.duration) / 60 / 60 / 1000).toFixed(2),
