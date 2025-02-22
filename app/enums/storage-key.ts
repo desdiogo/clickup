@@ -1,0 +1,4 @@
+export enum StorageKey {
+  CLICKUPTEAMID = 'CLICK_UP_TEAM_ID',
+  CLICKUPTOKEN = 'CLICK_UP_TOKEN'
+}
