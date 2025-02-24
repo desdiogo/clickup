@@ -5,6 +5,7 @@
 <div class="flex justify-end gap-4">
   <Config />
   <DarkMode />
+  <Github />
 </div>
 </template>
 
