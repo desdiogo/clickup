@@ -12,5 +12,5 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui'],
   plugins: [
     '~/plugins/dayjs'
-  ]
+  ],
 })

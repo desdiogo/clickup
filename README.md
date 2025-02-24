@@ -1,75 +1,78 @@
-# Nuxt Minimal Starter
+## README do Repositório - Cálculo de Horas Mensais
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Este repositório contém um projeto web desenvolvido com Nuxt, Nuxt UI, Tailwind CSS, Day.js e Zod, com o objetivo de calcular e exibir as horas mensais de um usuário. O projeto está disponível em [clickup.pages.dev](clickup.pages.dev).
 
-## Setup
+### Funcionalidades
 
-Make sure to install dependencies:
+O sistema permite que o usuário:
 
-```bash
-# npm
-npm install
+- Informe o `team id`.
+- Insira o `token` de acesso.
+- Selecione o `mês` e o `ano` desejados.
 
-# pnpm
-pnpm install
+Com base nessas informações, o sistema calcula e exibe as horas mensais do usuário.
 
-# yarn
-yarn install
+### Tecnologias Utilizadas
 
-# bun
-bun install
-```
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## Development Server
+- **Nuxt:** Framework Vue.js para construção de aplicações web modernas e performáticas.
+- **Nuxt UI:** Biblioteca de componentes UI para Nuxt, que facilita a criação de interfaces de usuário consistentes e personalizáveis.
+- **Tailwind CSS:** Framework CSS utilitário que permite estilizar rapidamente as interfaces, utilizando classes pré-definidas.
+- **Day.js:** Biblioteca JavaScript para manipulação de datas e horários, oferecendo funcionalidades como formatação, cálculo de diferenças, etc.
+- **Zod:** Biblioteca de validação de dados para TypeScript, que garante a integridade dos dados recebidos pelo sistema.
 
-Start the development server on `http://localhost:3000`:
+### Como Executar o Projeto
 
-```bash
-# npm
-npm run dev
+1. Clone este repositório:
+   ```bash
+   git clone [https://github.com/desdiogo/clickup.git](https://github.com/desdiogo/clickup.git)
+   ```
 
-# pnpm
-pnpm dev
+2. Instale as dependências:
 
-# yarn
-yarn dev
+   ```bash
+   # npm
+   npm install
+   
+   # pnpm
+   pnpm install
+   
+   # yarn
+   yarn install
+   
+   # bun
+   bun install
+   ```
 
-# bun
-bun run dev
-```
+3. Inicie o servidor de desenvolvimento:
 
-## Production
+   ```bash
+   # npm
+   npm run dev
+   
+   # pnpm
+   pnpm dev
+   
+   # yarn
+   yarn dev
+   
+   # bun
+   bun run dev
+   ```
 
-Build the application for production:
+### Observações
 
-```bash
-# npm
-npm run build
+Certifique-se de ter o Node.js e o npm (ou yarn, ou pnpm ou bun) instalados em sua máquina.
+Para obter o token de acesso, entre em contato com o administrador do sistema.
 
-# pnpm
-pnpm build
+### Contribuições
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests.
 
-# yarn
-yarn build
+### Licença
 
-# bun
-bun run build
-```
+Este projeto está sob a licença MIT.
 
-Locally preview production build:
+### Contato
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Em caso de dúvidas ou sugestões, entre em contato através do email [Meu email](mailto:desdiogo10@yahoo.com).
