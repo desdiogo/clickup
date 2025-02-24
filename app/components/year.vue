@@ -13,7 +13,14 @@ const selectedYear = defineModel('selectedYear', {default: ''})
 </script>
 
 <template>
-  <USelect v-model="selectedYear" :options="years" option-attribute="name" size="md" placeholder="Ano" />
+  <USelect
+      v-model="selectedYear"
+      color="gray"
+      :options="years"
+      option-attribute="name"
+      size="md"
+      placeholder="Ano"
+  />
 </template>
 
 <style scoped>

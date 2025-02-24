@@ -56,7 +56,13 @@ const { data: timeTracking, execute, error, status } = await useAsyncData(
     <div class="flex justify-center gap-4">
       <Month v-model:selected-month="selectedMonth"/>
       <Year v-model:selected-year="selectedYear"/>
-      <UButton :loading="status=== 'pending'" @click="execute()">Horas Trabalhadas</UButton>
+      <UButton
+          :loading="status=== 'pending'"
+          color="gray"
+          @click="execute()"
+      >
+        Horas Trabalhadas
+      </UButton>
     </div>
     <template v-if="timeTracking">
       <Hours v-model:rows="timeTracking.dates" :total="timeTracking.totalHours" />

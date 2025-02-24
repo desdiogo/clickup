@@ -16,7 +16,14 @@ const selectedMonth = defineModel('selectedMonth', {default: ''})
 </script>
 
 <template>
-  <USelect v-model="selectedMonth" :options="months" option-attribute="name" size="md" placeholder="Mês" />
+  <USelect
+      v-model="selectedMonth"
+      color="gray"
+      :options="months"
+      option-attribute="name"
+      size="md"
+      placeholder="Mês"
+  />
 </template>
 
 <style scoped>
